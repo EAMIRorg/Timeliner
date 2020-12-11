@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 191.0, 153.0, 1424.0, 367.0 ],
+		"rect" : [ 58.0, 99.0, 1425.0, 356.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,334 @@
 		"assistshowspatchername" : 0,
 		"title" : "Timeliner",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-261",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "bang" ],
+					"patching_rect" : [ 838.0, 383.216667175292969, 32.0, 22.0 ],
+					"text" : "t b b"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-260",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 1,
+							"revision" : 5,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 86.0, 348.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "bang if buffer~ can't open a file",
+									"id" : "obj-3",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 86.0, 384.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"linecount" : 3,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 171.0, 152.716667175292969, 150.0, 47.0 ],
+									"text" : "check if buffer~ throws an error to the Max console that it \"can't open\" a file"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-248",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 86.0, 311.0, 108.0, 22.0 ],
+									"text" : "match \"can't open\""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-246",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 86.0, 280.0, 57.0, 22.0 ],
+									"text" : "tosymbol"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-245",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 117.0, 100.0, 57.0, 22.0 ],
+									"text" : "tosymbol"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-233",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 225.0, 71.0, 22.0 ],
+									"text" : "fromsymbol"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-231",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 50.0, 131.333328247070312, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-223",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "bang", "" ],
+									"patching_rect" : [ 50.0, 100.0, 65.0, 22.0 ],
+									"text" : "sel buffer~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-215",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 165.216667175292969, 86.0, 22.0 ],
+									"text" : "pack buffer~ l"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-207",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 50.0, 254.0, 55.0, 22.0 ],
+									"text" : "zl.ecils 2"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-149",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 50.0, 195.0, 77.0, 22.0 ],
+									"text" : "route buffer~"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-258",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 50.0, 40.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-259",
+									"index" : 2,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 117.0, 40.0, 30.0, 30.0 ]
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-233", 0 ],
+									"source" : [ "obj-149", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-246", 0 ],
+									"source" : [ "obj-207", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-149", 0 ],
+									"source" : [ "obj-215", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-231", 0 ],
+									"source" : [ "obj-223", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-215", 0 ],
+									"source" : [ "obj-231", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-207", 0 ],
+									"source" : [ "obj-233", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-215", 1 ],
+									"source" : [ "obj-245", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-248", 0 ],
+									"source" : [ "obj-246", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-248", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-223", 0 ],
+									"source" : [ "obj-258", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-245", 0 ],
+									"source" : [ "obj-259", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-5", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 838.0, 353.0, 144.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"color" : [ 0.137255, 0.007843, 0.266667, 1.0 ],
 					"fontface" : 0,
@@ -902,12 +1230,11 @@
 						"styles" : [ 							{
 								"name" : "EAMIR",
 								"default" : 								{
-									"bgcolor" : [ 0.929412, 0.756863, 1.0, 1.0 ],
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 									"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.39 ],
-									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
+									"bgcolor" : [ 0.929412, 0.756863, 1.0, 1.0 ],
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 									"fontface" : [ 0 ],
+									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -918,14 +1245,15 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 								}
 ,
 								"newobj" : 								{
 									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
-									"fontface" : [ 0 ]
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 								}
 ,
 								"umenu" : 								{
@@ -949,12 +1277,11 @@
 , 							{
 								"name" : "EAMIR-1",
 								"default" : 								{
-									"bgcolor" : [ 0.929412, 0.756863, 1.0, 1.0 ],
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 									"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.39 ],
-									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
+									"bgcolor" : [ 0.929412, 0.756863, 1.0, 1.0 ],
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 									"fontface" : [ 0 ],
+									"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 									"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
 									"bgfillcolor" : 									{
 										"type" : "color",
@@ -965,14 +1292,15 @@
 										"proportion" : 0.39,
 										"autogradient" : 0
 									}
-
+,
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 								}
 ,
 								"newobj" : 								{
 									"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 									"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
-									"fontface" : [ 0 ]
+									"fontface" : [ 0 ],
+									"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 								}
 ,
 								"umenu" : 								{
@@ -995,15 +1323,9 @@
 							}
 , 							{
 								"name" : "MMJforM",
-								"slider" : 								{
-									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"elementcolor" : [ 0.317141, 0.341132, 0.336206, 1.0 ],
-									"color" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
-								}
-,
 								"default" : 								{
-									"bgcolor" : [ 0.311041, 0.314599, 0.318357, 1.0 ],
 									"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"bgcolor" : [ 0.311041, 0.314599, 0.318357, 1.0 ],
 									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"patchlinecolor" : [ 0.32549, 0.345098, 0.372549, 0.9 ],
 									"bgfillcolor" : 									{
@@ -1018,9 +1340,15 @@
 
 								}
 ,
-								"button" : 								{
+								"slider" : 								{
+									"elementcolor" : [ 0.317141, 0.341132, 0.336206, 1.0 ],
 									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+									"color" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+								}
+,
+								"button" : 								{
 									"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 									"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
@@ -1056,15 +1384,9 @@
 							}
 , 							{
 								"name" : "MMJforM-1",
-								"slider" : 								{
-									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"elementcolor" : [ 0.317141, 0.341132, 0.336206, 1.0 ],
-									"color" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
-								}
-,
 								"default" : 								{
-									"bgcolor" : [ 0.311041, 0.314599, 0.318357, 1.0 ],
 									"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"bgcolor" : [ 0.311041, 0.314599, 0.318357, 1.0 ],
 									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"patchlinecolor" : [ 0.32549, 0.345098, 0.372549, 0.9 ],
 									"bgfillcolor" : 									{
@@ -1079,9 +1401,15 @@
 
 								}
 ,
-								"button" : 								{
+								"slider" : 								{
+									"elementcolor" : [ 0.317141, 0.341132, 0.336206, 1.0 ],
 									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+									"color" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+								}
+,
+								"button" : 								{
 									"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 									"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
@@ -1117,15 +1445,9 @@
 							}
 , 							{
 								"name" : "MMJforM-2",
-								"slider" : 								{
-									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-									"elementcolor" : [ 0.317141, 0.341132, 0.336206, 1.0 ],
-									"color" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
-								}
-,
 								"default" : 								{
-									"bgcolor" : [ 0.311041, 0.314599, 0.318357, 1.0 ],
 									"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"bgcolor" : [ 0.311041, 0.314599, 0.318357, 1.0 ],
 									"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 									"patchlinecolor" : [ 0.32549, 0.345098, 0.372549, 0.9 ],
 									"bgfillcolor" : 									{
@@ -1140,9 +1462,15 @@
 
 								}
 ,
-								"button" : 								{
+								"slider" : 								{
+									"elementcolor" : [ 0.317141, 0.341132, 0.336206, 1.0 ],
 									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+									"color" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+								}
+,
+								"button" : 								{
 									"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 									"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 								}
 ,
@@ -1179,8 +1507,8 @@
 , 							{
 								"name" : "VJ Classic",
 								"default" : 								{
-									"bgcolor" : [ 0.264013, 0.273808, 0.299802, 1.0 ],
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.264013, 0.273808, 0.299802, 1.0 ],
 									"selectioncolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 									"color" : [ 0.682353, 0.705882, 0.776471, 1.0 ],
 									"bgfillcolor" : 									{
@@ -1195,15 +1523,15 @@
 
 								}
 ,
-								"ezdac~" : 								{
-									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+								"ezadc~" : 								{
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 									"color" : [ 1.0, 0.0, 0.0, 1.0 ]
 								}
 ,
-								"ezadc~" : 								{
-									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+								"ezdac~" : 								{
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 									"color" : [ 1.0, 0.0, 0.0, 1.0 ]
 								}
 ,
@@ -1245,8 +1573,8 @@
 , 							{
 								"name" : "VJ Classic-1-1",
 								"default" : 								{
-									"bgcolor" : [ 0.264013, 0.273808, 0.299802, 1.0 ],
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.264013, 0.273808, 0.299802, 1.0 ],
 									"selectioncolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 									"color" : [ 0.682353, 0.705882, 0.776471, 1.0 ],
 									"bgfillcolor" : 									{
@@ -1261,15 +1589,15 @@
 
 								}
 ,
-								"ezdac~" : 								{
-									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+								"ezadc~" : 								{
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 									"color" : [ 1.0, 0.0, 0.0, 1.0 ]
 								}
 ,
-								"ezadc~" : 								{
-									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+								"ezdac~" : 								{
 									"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+									"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 									"color" : [ 1.0, 0.0, 0.0, 1.0 ]
 								}
 ,
@@ -1638,7 +1966,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 1065.15178700000024, 732.0, 77.0, 22.0 ],
+					"patching_rect" : [ 1113.75, 732.0, 77.0, 22.0 ],
 					"text" : "route symbol"
 				}
 
@@ -2491,7 +2819,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 834.0, 284.5, 376.0, 40.0 ],
+					"patching_rect" : [ 834.0, 268.5, 376.0, 40.0 ],
 					"text" : "Detect No Audio Sample",
 					"textcolor" : [ 0.380392156862745, 0.223529411764706, 0.482352941176471, 1.0 ]
 				}
@@ -2609,12 +2937,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-29",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1289.303574000000026, 220.75, 432.0, 22.0 ],
-					"text" : "symbol \"Macintosh HD:/Users/VJ/Desktop/Viva La Vida.maxpresets\""
+					"patching_rect" : [ 1292.803574000000026, 227.75, 432.0, 35.0 ],
+					"text" : "symbol \"Media:/Dropbox/Working Projects/Max/MegaSlider/Viva La Vida.maxpresets\""
 				}
 
 			}
@@ -2702,7 +3031,7 @@
 					"patching_rect" : [ 955.553574000000026, 203.0, 69.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"allwindowsactive" : 0,
-						"appicon_mac" : "Media:/Dropbox/Working Projects/Max/timeliner/Timeliner/patchers/EAMIR.icns",
+						"appicon_mac" : "Media:/Git Repos/EAMIR/Timeliner/Timeliner/patchers/EAMIR.icns",
 						"appicon_win" : "Media:/Dropbox/source/icons/VJ.ico",
 						"audiosupport" : 1,
 						"bundleidentifier" : "org.eamir.timeliner",
@@ -2805,7 +3134,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 854.5, 485.0, 24.0, 24.0 ]
+					"patching_rect" : [ 854.5, 528.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -2858,32 +3187,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 834.0, 430.0, 111.0, 23.0 ],
+					"patching_rect" : [ 838.0, 437.0, 111.0, 23.0 ],
 					"text" : "opendialog sound"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-163",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 834.0, 387.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-149",
-					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "bang", "" ],
-					"patching_rect" : [ 834.0, 354.0, 65.0, 22.0 ],
-					"text" : "sel buffer~"
 				}
 
 			}
@@ -2894,7 +3199,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
-					"patching_rect" : [ 834.0, 321.0, 169.0, 22.0 ],
+					"patching_rect" : [ 838.0, 301.0, 169.0, 22.0 ],
 					"text" : "console @showonlyerrors 1"
 				}
 
@@ -3515,8 +3820,8 @@
 					"patching_rect" : [ 625.0, 633.5, 139.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1105.083333522081375, 190.25, 64.0, 47.0 ],
-					"text" : "Drop an preset file here",
+					"presentation_rect" : [ 1103.083333522081375, 190.25, 64.0, 47.0 ],
+					"text" : "Drop a preset file here",
 					"textjustification" : 1
 				}
 
@@ -3530,7 +3835,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 621.196425999999974, 623.0, 147.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1091.083333522081375, 161.75, 91.916666805744171, 104.0 ]
+					"presentation_rect" : [ 1089.083333522081375, 161.75, 91.916666805744171, 104.0 ]
 				}
 
 			}
@@ -3543,7 +3848,7 @@
 					"patching_rect" : [ 80.5, 466.5, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1105.083333522081375, 36.25, 63.0, 47.0 ],
+					"presentation_rect" : [ 1103.083333522081375, 36.25, 63.0, 47.0 ],
 					"text" : "Drop an audio file here",
 					"textjustification" : 1
 				}
@@ -4605,12 +4910,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-57",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1022.5, 1677.5, 131.0, 22.0 ],
-					"text" : "setloop 0. 280.561122"
+					"patching_rect" : [ 1022.5, 1677.5, 131.0, 35.0 ],
+					"text" : "setloop 0. 13581.878678"
 				}
 
 			}
@@ -4941,7 +5247,7 @@
 					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 80.5, 456.0, 147.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1091.166666716337204, 7.75, 91.833333611488342, 104.0 ]
+					"presentation_rect" : [ 1089.166666716337204, 7.75, 91.833333611488342, 104.0 ]
 				}
 
 			}
@@ -5888,7 +6194,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-175", 0 ],
-					"midpoints" : [ 843.5, 468.5, 864.0, 468.5 ],
+					"midpoints" : [ 847.5, 506.5, 864.0, 506.5 ],
 					"order" : 0,
 					"source" : [ "obj-101", 0 ]
 				}
@@ -5897,7 +6203,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-6", 0 ],
-					"midpoints" : [ 843.5, 502.5, 90.0, 502.5 ],
+					"midpoints" : [ 847.5, 502.5, 90.0, 502.5 ],
 					"order" : 2,
 					"source" : [ "obj-101", 0 ]
 				}
@@ -5906,7 +6212,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 4 ],
-					"midpoints" : [ 843.5, 474.5, 908.100000000000023, 474.5 ],
+					"midpoints" : [ 847.5, 500.5, 908.100000000000023, 500.5 ],
 					"order" : 1,
 					"source" : [ "obj-101", 0 ]
 				}
@@ -6217,13 +6523,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-163", 0 ],
-					"source" : [ "obj-149", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-167", 0 ],
 					"midpoints" : [ 1412.205361000000039, 577.25, 1447.205361000000039, 577.25 ],
 					"order" : 0,
@@ -6329,23 +6628,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-101", 0 ],
-					"order" : 1,
-					"source" : [ "obj-163", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-165", 0 ],
-					"midpoints" : [ 843.5, 420.0, 971.5, 420.0, 971.5, 411.0, 1015.5, 411.0 ],
-					"order" : 0,
-					"source" : [ "obj-163", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-170", 0 ],
 					"midpoints" : [ 1334.705361000000039, 781.0, 1290.053574000000026, 781.0, 1290.053574000000026, 657.406234741210938, 1319.205361000000039, 657.406234741210938 ],
 					"source" : [ "obj-164", 0 ]
@@ -6431,7 +6713,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-166", 0 ],
-					"midpoints" : [ 864.0, 534.0, 980.0, 534.0, 980.0, 411.0, 1080.5, 411.0 ],
+					"midpoints" : [ 864.0, 567.0, 980.0, 567.0, 980.0, 411.0, 1080.5, 411.0 ],
 					"source" : [ "obj-175", 0 ]
 				}
 
@@ -6800,6 +7082,28 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-261", 0 ],
+					"source" : [ "obj-260", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-101", 0 ],
+					"source" : [ "obj-261", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-165", 0 ],
+					"midpoints" : [ 860.5, 413.108333587646484, 1015.5, 413.108333587646484 ],
+					"source" : [ "obj-261", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-106", 1 ],
 					"source" : [ "obj-264", 0 ]
 				}
@@ -6886,7 +7190,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-29", 1 ],
-					"midpoints" : [ 1282.803574000000026, 218.75, 1711.803574000000026, 218.75 ],
+					"midpoints" : [ 1282.803574000000026, 218.75, 1715.303574000000026, 218.75 ],
 					"order" : 0,
 					"source" : [ "obj-33", 0 ]
 				}
@@ -6895,7 +7199,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
-					"midpoints" : [ 1282.803574000000026, 702.375, 1074.65178700000024, 702.375 ],
+					"midpoints" : [ 1282.803574000000026, 702.375, 1123.25, 702.375 ],
 					"order" : 1,
 					"source" : [ "obj-33", 0 ]
 				}
@@ -7185,7 +7489,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-149", 0 ],
+					"destination" : [ "obj-260", 1 ],
+					"midpoints" : [ 922.5, 337.5, 972.5, 337.5 ],
+					"source" : [ "obj-64", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-260", 0 ],
 					"source" : [ "obj-64", 0 ]
 				}
 
@@ -7237,7 +7549,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
-					"midpoints" : [ 1109.0, 1008.0, 66.5, 1008.0, 66.5, 554.0, 90.0, 554.0 ],
+					"midpoints" : [ 1109.0, 996.0, 66.5, 996.0, 66.5, 554.0, 90.0, 554.0 ],
 					"source" : [ "obj-7", 4 ]
 				}
 
@@ -7275,7 +7587,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 5 ],
-					"midpoints" : [ 1074.65178700000024, 800.5, 1109.0, 800.5 ],
+					"midpoints" : [ 1123.25, 800.5, 1109.0, 800.5 ],
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -7551,63 +7863,63 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "EAMIR_logo.png",
-				"bootpath" : "/Volumes/Media/Dropbox/Working Projects/Max/timeliner/Timeliner/media",
+				"bootpath" : "/Volumes/Media/Git Repos/EAMIR/Timeliner/Timeliner/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "Megaslider.maxpat",
-				"bootpath" : "/Volumes/Media/Dropbox/Working Projects/Max/timeliner/Timeliner/patchers",
+				"bootpath" : "/Volumes/Media/Git Repos/EAMIR/Timeliner/Timeliner/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "region_renamer.maxpat",
-				"bootpath" : "/Volumes/Media/Dropbox/Working Projects/Max/timeliner/Timeliner/patchers",
+				"bootpath" : "/Volumes/Media/Git Repos/EAMIR/Timeliner/Timeliner/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "color_selector.maxpat",
-				"bootpath" : "/Volumes/Media/Dropbox/Working Projects/Max/timeliner/Timeliner/patchers",
+				"bootpath" : "/Volumes/Media/Git Repos/EAMIR/Timeliner/Timeliner/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "items_to_coll.maxpat",
-				"bootpath" : "/Volumes/Media/Dropbox/Working Projects/Max/timeliner/Timeliner/patchers",
+				"bootpath" : "/Volumes/Media/Git Repos/EAMIR/Timeliner/Timeliner/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vj.prefs_loader_standalone.maxpat",
-				"bootpath" : "/Volumes/Media/Dropbox/Working Projects/Max/timeliner/Timeliner/patchers",
+				"bootpath" : "/Volumes/Media/Git Repos/EAMIR/Timeliner/Timeliner/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "VJManzo_info.maxpat",
-				"bootpath" : "/Volumes/Media/Dropbox/Working Projects/Max/timeliner/Timeliner/patchers",
+				"bootpath" : "/Volumes/Media/Git Repos/EAMIR/Timeliner/Timeliner/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "VJManzo_logo.png",
-				"bootpath" : "/Volumes/Media/Dropbox/Working Projects/Max/timeliner/Timeliner/media",
+				"bootpath" : "/Volumes/Media/Git Repos/EAMIR/Timeliner/Timeliner/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "vj.prefs_loader_filepath.maxpat",
-				"bootpath" : "/Volumes/Media/Dropbox/Working Projects/Max/timeliner/Timeliner/patchers",
+				"bootpath" : "/Volumes/Media/Git Repos/EAMIR/Timeliner/Timeliner/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -7615,35 +7927,35 @@
 , 			{
 				"name" : "filepath.txt",
 				"bootpath" : "~/Library/Application Support/Timeliner",
-				"patcherrelativepath" : "../../../../../../../../Users/VJ/Library/Application Support/Timeliner",
+				"patcherrelativepath" : "../../../../../../../Users/VJ/Library/Application Support/Timeliner",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "eamir.appmenuabout.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/EAMIR SDK/patchers/EAMIR_support/p_data",
-				"patcherrelativepath" : "../../../../../../../../Users/VJ/Documents/Max 8/Packages/EAMIR SDK/patchers/EAMIR_support/p_data",
+				"patcherrelativepath" : "../../../../../../../Users/VJ/Documents/Max 8/Packages/EAMIR SDK/patchers/EAMIR_support/p_data",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "EAMIR_splash.jpg",
 				"bootpath" : "~/Documents/Max 8/Packages/EAMIR SDK/media",
-				"patcherrelativepath" : "../../../../../../../../Users/VJ/Documents/Max 8/Packages/EAMIR SDK/media",
+				"patcherrelativepath" : "../../../../../../../Users/VJ/Documents/Max 8/Packages/EAMIR SDK/media",
 				"type" : "JPEG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "cmblogo.png",
 				"bootpath" : "~/Documents/Max 8/Packages/EAMIR SDK/externals/V Objects/vj.appmenu",
-				"patcherrelativepath" : "../../../../../../../../Users/VJ/Documents/Max 8/Packages/EAMIR SDK/externals/V Objects/vj.appmenu",
+				"patcherrelativepath" : "../../../../../../../Users/VJ/Documents/Max 8/Packages/EAMIR SDK/externals/V Objects/vj.appmenu",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "EAMIR_info.maxpat",
 				"bootpath" : "~/Documents/Max 8/Packages/EAMIR SDK/patchers/EAMIR_modules",
-				"patcherrelativepath" : "../../../../../../../../Users/VJ/Documents/Max 8/Packages/EAMIR SDK/patchers/EAMIR_modules",
+				"patcherrelativepath" : "../../../../../../../Users/VJ/Documents/Max 8/Packages/EAMIR SDK/patchers/EAMIR_modules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -7670,12 +7982,11 @@
 , 			{
 				"name" : "EAMIR",
 				"default" : 				{
-					"bgcolor" : [ 0.929412, 0.756863, 1.0, 1.0 ],
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 					"elementcolor" : [ 0.376471, 0.384314, 0.4, 0.39 ],
-					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
+					"bgcolor" : [ 0.929412, 0.756863, 1.0, 1.0 ],
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 					"fontface" : [ 0 ],
+					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -7686,14 +7997,15 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 				}
 ,
 				"newobj" : 				{
 					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
-					"fontface" : [ 0 ]
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -7718,7 +8030,6 @@
 				"name" : "EAMIR-1",
 				"default" : 				{
 					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 					"fontface" : [ 0 ],
 					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
@@ -7731,14 +8042,15 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 				}
 ,
 				"newobj" : 				{
 					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
-					"fontface" : [ 0 ]
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -7762,12 +8074,11 @@
 , 			{
 				"name" : "EAMIR-1-1",
 				"default" : 				{
-					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 					"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
-					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
+					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 					"fontface" : [ 0 ],
+					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -7778,14 +8089,15 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 				}
 ,
 				"newobj" : 				{
 					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
-					"fontface" : [ 0 ]
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -7809,12 +8121,11 @@
 , 			{
 				"name" : "EAMIR-1-2",
 				"default" : 				{
-					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 					"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
-					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
+					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 					"fontface" : [ 0 ],
+					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -7825,14 +8136,15 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 				}
 ,
 				"newobj" : 				{
 					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
-					"fontface" : [ 0 ]
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -7856,12 +8168,11 @@
 , 			{
 				"name" : "EAMIR-2",
 				"default" : 				{
-					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 					"elementcolor" : [ 0.462745, 0.470588, 0.490196, 0.11 ],
-					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
+					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 					"fontface" : [ 0 ],
+					"color" : [ 0.8, 0.4, 1.0, 1.0 ],
 					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
 					"bgfillcolor" : 					{
 						"type" : "color",
@@ -7872,14 +8183,15 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 				}
 ,
 				"newobj" : 				{
 					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
-					"fontface" : [ 0 ]
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -7904,7 +8216,6 @@
 				"name" : "EAMIR-3",
 				"default" : 				{
 					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
 					"fontface" : [ 0 ],
 					"patchlinecolor" : [ 0.231373, 0.121569, 0.305882, 0.9 ],
@@ -7917,14 +8228,15 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-
+,
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 				}
 ,
 				"newobj" : 				{
 					"bgcolor" : [ 0.93025, 0.756547, 1.0, 0.25 ],
-					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ],
 					"textcolor_inverse" : [ 0.231373, 0.121569, 0.305882, 1.0 ],
-					"fontface" : [ 0 ]
+					"fontface" : [ 0 ],
+					"accentcolor" : [ 0.466667, 0.254902, 0.607843, 1.0 ]
 				}
 ,
 				"umenu" : 				{
@@ -7947,15 +8259,9 @@
 			}
 , 			{
 				"name" : "MMJforM",
-				"slider" : 				{
-					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-					"elementcolor" : [ 0.317141, 0.341132, 0.336206, 1.0 ],
-					"color" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
-				}
-,
 				"default" : 				{
-					"bgcolor" : [ 0.311041, 0.314599, 0.318357, 1.0 ],
 					"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"bgcolor" : [ 0.311041, 0.314599, 0.318357, 1.0 ],
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"patchlinecolor" : [ 0.32549, 0.345098, 0.372549, 0.9 ],
 					"bgfillcolor" : 					{
@@ -7970,9 +8276,15 @@
 
 				}
 ,
-				"button" : 				{
+				"slider" : 				{
+					"elementcolor" : [ 0.317141, 0.341132, 0.336206, 1.0 ],
 					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"color" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+				}
+,
+				"button" : 				{
 					"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
@@ -8008,15 +8320,9 @@
 			}
 , 			{
 				"name" : "MMJforM-1",
-				"slider" : 				{
-					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-					"elementcolor" : [ 0.317141, 0.341132, 0.336206, 1.0 ],
-					"color" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
-				}
-,
 				"default" : 				{
-					"bgcolor" : [ 0.311041, 0.314599, 0.318357, 1.0 ],
 					"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"bgcolor" : [ 0.311041, 0.314599, 0.318357, 1.0 ],
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"patchlinecolor" : [ 0.32549, 0.345098, 0.372549, 0.9 ],
 					"bgfillcolor" : 					{
@@ -8031,9 +8337,15 @@
 
 				}
 ,
-				"button" : 				{
+				"slider" : 				{
+					"elementcolor" : [ 0.317141, 0.341132, 0.336206, 1.0 ],
 					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"color" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+				}
+,
+				"button" : 				{
 					"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
@@ -8069,15 +8381,9 @@
 			}
 , 			{
 				"name" : "MMJforM-2",
-				"slider" : 				{
-					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
-					"elementcolor" : [ 0.317141, 0.341132, 0.336206, 1.0 ],
-					"color" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
-				}
-,
 				"default" : 				{
-					"bgcolor" : [ 0.311041, 0.314599, 0.318357, 1.0 ],
 					"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"bgcolor" : [ 0.311041, 0.314599, 0.318357, 1.0 ],
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ],
 					"patchlinecolor" : [ 0.32549, 0.345098, 0.372549, 0.9 ],
 					"bgfillcolor" : 					{
@@ -8092,9 +8398,15 @@
 
 				}
 ,
-				"button" : 				{
+				"slider" : 				{
+					"elementcolor" : [ 0.317141, 0.341132, 0.336206, 1.0 ],
 					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+					"color" : [ 0.862745, 0.870588, 0.878431, 1.0 ]
+				}
+,
+				"button" : 				{
 					"elementcolor" : [ 0.682032, 0.698052, 0.748716, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"color" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 ,
@@ -8131,8 +8443,8 @@
 , 			{
 				"name" : "VJ Classic",
 				"default" : 				{
-					"bgcolor" : [ 0.264013, 0.273808, 0.299802, 1.0 ],
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.264013, 0.273808, 0.299802, 1.0 ],
 					"selectioncolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"color" : [ 0.682353, 0.705882, 0.776471, 1.0 ],
 					"bgfillcolor" : 					{
@@ -8147,15 +8459,15 @@
 
 				}
 ,
-				"ezdac~" : 				{
-					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+				"ezadc~" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
 ,
-				"ezadc~" : 				{
-					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+				"ezdac~" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
 ,
@@ -8197,8 +8509,8 @@
 , 			{
 				"name" : "VJ Classic-1-1",
 				"default" : 				{
-					"bgcolor" : [ 0.264013, 0.273808, 0.299802, 1.0 ],
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.264013, 0.273808, 0.299802, 1.0 ],
 					"selectioncolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
 					"color" : [ 0.682353, 0.705882, 0.776471, 1.0 ],
 					"bgfillcolor" : 					{
@@ -8213,15 +8525,15 @@
 
 				}
 ,
-				"ezdac~" : 				{
-					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+				"ezadc~" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
 ,
-				"ezadc~" : 				{
-					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
+				"ezdac~" : 				{
 					"elementcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ],
+					"bgcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"color" : [ 1.0, 0.0, 0.0, 1.0 ]
 				}
 ,
@@ -8245,10 +8557,10 @@
 , 			{
 				"name" : "foamy",
 				"default" : 				{
-					"accentcolor" : [ 0.0, 1.0, 0.501961, 1.0 ],
 					"elementcolor" : [ 0.298039, 0.298039, 0.298039, 1.0 ],
 					"clearcolor" : [ 0.4, 1.0, 0.8, 1.0 ],
-					"color" : [ 0.0, 1.0, 0.501961, 1.0 ]
+					"color" : [ 0.0, 1.0, 0.501961, 1.0 ],
+					"accentcolor" : [ 0.0, 1.0, 0.501961, 1.0 ]
 				}
 ,
 				"parentstyle" : "",
